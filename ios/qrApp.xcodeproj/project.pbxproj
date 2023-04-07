@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-qrApp-qrAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-qrApp-qrAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8BA0CC4629DCF557008B5479 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0CC4529DCF555008B5479 /* Ionicons.ttf */; };
+		8BA0CC4929DCF5DA008B5479 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0CC4729DCF5DA008B5479 /* FontAwesome.ttf */; };
+		8BA0CC4A29DCF5DA008B5479 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0CC4829DCF5DA008B5479 /* Entypo.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-qrApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qrApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = qrApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-qrApp-qrAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrApp-qrAppTests.release.xcconfig"; path = "Target Support Files/Pods-qrApp-qrAppTests/Pods-qrApp-qrAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA0CC4529DCF555008B5479 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		8BA0CC4729DCF5DA008B5479 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		8BA0CC4829DCF5DA008B5479 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,7 @@
 		13B07FAE1A68108700A75B9A /* qrApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BA0CC4429DCF4CC008B5479 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -135,6 +142,16 @@
 				00E356EE1AD99517003FC87E /* qrAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA0CC4429DCF4CC008B5479 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8BA0CC4829DCF5DA008B5479 /* Entypo.ttf */,
+				8BA0CC4729DCF5DA008B5479 /* FontAwesome.ttf */,
+				8BA0CC4529DCF555008B5479 /* Ionicons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -244,6 +261,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8BA0CC4629DCF557008B5479 /* Ionicons.ttf in Resources */,
+				8BA0CC4A29DCF5DA008B5479 /* Entypo.ttf in Resources */,
+				8BA0CC4929DCF5DA008B5479 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,7 @@
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-qrApp-qrAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FKC883QP66;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -461,6 +482,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = FKC883QP66;
 				INFOPLIST_FILE = qrAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FKC883QP66;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qrApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FKC883QP66;
 				INFOPLIST_FILE = qrApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
